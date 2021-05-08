@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Courses</title>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  
+  <!-- Navigation -->
+  <div id="nav-placeholder"></div>
+  
+  <br>
+  <h1 class="display-4 text-center text-primary">All courses</h1>
+  <hr class="my-1 col-6 border-primary">
+
+  <form class="form-inline justify-content-center">
+    <input id="searchedForm" name="searchedForm" class="form-control mr-2" type="text" placeholder="Search in courses">
+    <span id="searchBtn" class="btn btn-primary my-2 my-sm-0">Search</span>
+  </form>
+  <br>
+  <!-- Pagination, Search and table -->
+  <div class="table" id="pagination_data"></div>
+  <!-- Script -->
+  <script src="../js/pagination.js"></script>
+  
+  <div style="margin-top: 200px"></div>
+</body>
+</html>

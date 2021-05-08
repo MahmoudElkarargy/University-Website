@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <div id="nav-placeholder"></div>
+  <script>
+    $.get("navbar.html", function(data){
+        $("#nav-placeholder").replaceWith(data);
+    });
+  </script>
+
+<!-- Image Slider -->
+    <!-- The slideshow -->
+    <div id="slides" class="carousel slide" data-ride="carousel">
+      <ul class="carousel-indicators">
+        <li data-target="#slides" data-slide-to="0" class="active"></li>
+        <li data-target="#slides" data-slide-to="1"></li>
+        <li data-target="#slides" data-slide-to="2"></li>
+        <li data-target="#slides" data-slide-to="3"></li>
+      </ul>
+      <div class="carousel-inner">
+        <!-- Item 0 -->
+        <div class="carousel-item active">
+          <section id="promo"> </section>
+          <img src="../imgs/img1.png" alt="faculty" width="100%" height="100%">
+          <div class="carousel-caption">
+            <h1 class="display-2 text-light">Faculty of Engineering</h1>
+            <h2 class="display-4 text-light">Alexandria University</h2>
+            <h3 class="text-secondary">Established in 1942</h3>
+            <a type="button" href="#down" class="btn btn-outline-secondary btn-lg">ABOUT</a>
+            <a href="courses.html" type="button" class="btn btn-primary btn-lg">SEARCH</a>
+          </div>   
+        </div>
+        <!-- Item 1 -->
+        <div class="carousel-item">
+          <section id="promo"> </section>
+          <img src="../imgs/img2.png" alt="courses" width="100%" height="100%">
+          <div class="carousel-caption">
+            <h1 class="text-light">Courses</h1>
+            <h4 class="text-secondary">More than 361 course</h4>
+          </div>   
+        </div>
+        <!-- Item 2 -->
+        <div class="carousel-item">
+          <section id="promo"> </section>
+          <img src="../imgs/img3.png" alt="departments" width="100%" height="100%">
+          <div class="carousel-caption">
+            <h1 class="text-light">Departments</h1>
+            <h4 class="text-secondary">Up to 15+ department</h4>
+          </div>   
+        </div>
+        <!-- Item 3 -->
+        <div class="carousel-item">
+          <section id="promo"> </section>
+          <img src="../imgs/img4.png" alt="professors" width="100%" height="100%">
+          <div class="carousel-caption">
+            <h1 class="text-light">Professors</h1>
+            <h4 class="text-secondary">High quality academic staff</h4>
+          </div>   
+        </div>
+      </div>
+
+      <a class="carousel-control-prev" href="#slides" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#slides" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+  </div>
+    
+    <!-- About section -->
+    
+    <div id="down" class="container-fluid padding hero">
+      <hr style="height:2px;border-width:0;color:#2c3e50 ;background-color:gray; margin-bottom: 0">
+      <div class="row welcome text-center">
+        <div class="col-6">
+          <h1 class="display-3 text-primary">About.</h1>
+          <hr>
+          <p class="lead text-primary">The Faculty of Engineering, Alexandria University was established in 1942.</p>
+          <p class="lead text-primary"><small>The Faculty of Engineering, Alexandria University has developed a curriculum to upgrade the Graduate Studies and Research based on credit hours system, to provide advanced academic programs to match the development of different fields and to enhance scientific.</small></p>
+          <a class="btn btn-primary btn-lg" target="_blank" href="https://eng.alexu.edu.eg" role="button">Learn more</a>
+        </div>
+        <div class="col-6">
+          <h1>Visit Us</h1>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3412.501207171375!2d29.921582414768086!3d31.206840681474468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c47e53204b39%3A0x884cc003f3633cf1!2sFaculty%20of%20Engineering%2C%20Alexandria%20University!5e0!3m2!1sen!2seg!4v1610321358945!5m2!1sen!2seg" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+      </div>
+      <hr style="height:2px;border-width:0;color:#2c3e50 ;background-color:gray; margin-bottom: 0">
+<br>
+      <!-- Footer -->
+  <footer>
+    <div class="container-fluid">
+      <div class="row text-center">
+        <div class="col-md-4">
+          <a class="navbar-brand">Mahmoud ElKarargy</a>
+          <hr class="light">
+          <p>+20 111 246 709</p>
+          <p>Mahmoud.elkarargy@gmail.com</p>
+          <p>Alexandria, Egypt</p>
+        </div>
+        <div class="col-md-4">
+          <hr class="light">
+          <h5>Social Media</h5>
+          <hr class="light">
+          <a target="_blank" href="https://www.linkedin.com/in/mahmoud-elkarargy/">LinkedIn</a>
+          <br>
+          <br>
+          <a target="_blank" href="https://github.com/MahmoudElkarargy">GitHub</a>
+          <br>
+          <br>
+          <a target="_blank" href="https://www.facebook.com/mahmoud.elkarargy">Facebook</a>
+        </div>
+        <div class="col-md-4">
+          <hr class="light">
+          <h5>University</h5>
+          <hr class="light">
+          <p>ID: 5462</p>
+          <p>Database Project</p>
+          <p>Lab 4</p>
+        </div>
+        <div class="col-12">
+          <hr class="light-100">
+          <h5>&copy; Mahmoud Ahmed Elkarargy</h5>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <br> 
+    </div>
+</body>
+</html>
